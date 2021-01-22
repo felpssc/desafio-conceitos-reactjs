@@ -24,7 +24,7 @@ Nesse desafio, o objetivo foi colocar em prática os conceitos de React adquirid
 <br>
 <br>
 
-<h2>Após os testes, tomei a liberdade de implementar um botão de likes na aplicação, aproveitando a funcionalidade da API:</h2>
+<h3>Após os testes, tomei a liberdade de implementar um botão de likes na aplicação, aproveitando a funcionalidade da API:</h3>
 
 ![like](https://i.imgur.com/2BanLO2.gif)
 
