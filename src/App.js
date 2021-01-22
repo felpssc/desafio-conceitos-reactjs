@@ -33,12 +33,12 @@ function App() {
     ));
   }
 
-  // async function handleLikeRepository(id) {
-  //   await api.post(`/repositories/${id}/like`);
-  //   const response = await api.get('/repositories');
+  async function handleLikeRepository(id) {
+    await api.post(`/repositories/${id}/like`);
+    const response = await api.get('/repositories');
 
-  //   setRepository([...response.data]); 
-  // }
+    setRepository([...response.data]); 
+  }
 
   return (
     <div>
@@ -46,11 +46,10 @@ function App() {
           {repositories.map(repository => {
             return(
               <li key={repository.id}>
-                {repository.title} 
-                {/* | Likes: {repository.likes}
+                {repository.title} | Likes: {repository.likes}
                 <button id="like-button" onClick={() => {handleLikeRepository(repository.id)}}>
                   Curtir
-                </button> */}
+                </button>
                 <button onClick={() => handleRemoveRepository(repository.id)}>
                   Remover
                 </button>
